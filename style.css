@@ -67,6 +67,8 @@ a {
     flex-direction: row;
     gap: 32px;
     background-color: #000915;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 .gamebox__container {
@@ -77,26 +79,32 @@ a {
 .game1 {
     background-image: url(img/game1.png);
     background-repeat: no-repeat;
-    padding-top: 236px;
     padding-left: 32px;
     color: #FFFFFF;
     font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .game2 {
     background-image: url(img/game2.png);
     background-repeat: no-repeat;
-    padding-top: 236px;
     padding-left: 32px;
     color: #FFFFFF;
     font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .game3 {
     background-image: url(img/game3.png);
     background-repeat: no-repeat;
-    padding-top: 236px;
     padding-left: 32px;
     color: #FFFFFF;
     font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
