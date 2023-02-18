@@ -27,7 +27,7 @@ a {
     font-weight: 700;
     font-size: 64px;
     color: #FFFFFF;
-    width: 788px;
+    width: 700px;
     padding-bottom: 32px;
 }
 
@@ -74,37 +74,28 @@ a {
 .gamebox__container {
     width: 379px;
     height: 300px;
+    background-position: center;
+    background-size: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    padding: 32px;
+    border-radius: 16px;
+    box-sizing: border-box;
+
 }
 
 .game1 {
-    background-image: url(img/game1.png);
-    background-repeat: no-repeat;
-    padding-left: 32px;
-    color: #FFFFFF;
-    font-size: 24px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    background-image: url(img/game1.png); 
 }
 
 .game2 {
     background-image: url(img/game2.png);
-    background-repeat: no-repeat;
-    padding-left: 32px;
-    color: #FFFFFF;
-    font-size: 24px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
 }
 
 .game3 {
     background-image: url(img/game3.png);
-    background-repeat: no-repeat;
-    padding-left: 32px;
-    color: #FFFFFF;
-    font-size: 24px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
 }
