@@ -28,7 +28,7 @@ a {
     font-size: 64px;
     color: #FFFFFF;
     width: 700px;
-    padding-bottom: 32px;
+    padding-bottom: 17px;
 }
 
 .text {
@@ -67,7 +67,7 @@ a {
     flex-direction: row;
     gap: 32px;
     background-color: #000915;
-    padding-top: 128px;
+    padding-top: 162px;
     padding-bottom: 128px;
 
         &__container {
@@ -84,16 +84,17 @@ a {
         padding: 32px;
         border-radius: 16px;
         box-sizing: border-box;
+        }
     
-        &--1 {
+        &__container--1 {
         background-image: url(img/game1.png); 
         }
 
-        &--2 {
+        &__container--2 {
         background-image: url(img/game2.png);
         }
         
-        &--3 {
+        &__container--3 {
         background-image: url(img/game3.png);
         }
 }
