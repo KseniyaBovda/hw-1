@@ -71,30 +71,31 @@ a {
     padding-bottom: 128px;
 
         &__container {
-        width: 379px;
-        height: 300px;
-        background-position: center;
-        background-size: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF;
-        display: flex;
-        align-items: flex-end;
-        padding: 32px;
-        border-radius: 16px;
-        box-sizing: border-box;
+            width: 379px;
+            height: 300px;
+            background-position: center;
+            background-size: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: flex-end;
+            padding: 32px;
+            border-radius: 16px;
+            box-sizing: border-box;
         }
     
         &__container--1 {
-        background-image: url(img/game1.png); 
+            background-image: url(img/game1.png); 
         }
 
         &__container--2 {
-        background-image: url(img/game2.png);
+            background-image: url(img/game2.png);
         }
         
         &__container--3 {
-        background-image: url(img/game3.png);
+            background-image: url(img/game3.png);
         }
 }
+@import 'mobile';

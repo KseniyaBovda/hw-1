@@ -92,4 +92,56 @@ a {
 }
 .gamebox__container--3 {
   background-image: url(img/game3.png);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding-top: 238px;
+    padding-bottom: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position-x: -217px;
+    background-position-y: -15px;
+    background-size: 1058px;
+    background-repeat: no-repeat;
+  }
+  .welcome {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    width: 343px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  .text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    text-align: center;
+    padding-bottom: 34px;
+  }
+  .button__go {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 13px 74px 13px 74px;
+  }
+  .gamebox {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 129px;
+  }
+  .gamebox__container {
+    width: 343px;
+    padding: 16px 32px 32px 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
