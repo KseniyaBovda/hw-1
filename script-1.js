@@ -1,3 +1,4 @@
+JS-1
 
 // Задание 1
 let a = 10;
@@ -64,9 +65,7 @@ user.age = surname;
 
 
 // Задание 9.3
-delete [`city of residence`];
-
-
+delete Object[`city of residence`];
 
 
 // Задание 9.4
@@ -77,3 +76,4 @@ alert(user[info]);
 // Задание 10
 let question = String(prompt(`Как вас зовут?`));
 alert(`Привет ${question} !`);
+
