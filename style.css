@@ -21,8 +21,7 @@ a {
   padding-bottom: 460px;
   background-image: url(img/background.png);
 }
-
-.welcome {
+.header__title {
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -30,8 +29,7 @@ a {
   width: 700px;
   padding-bottom: 17px;
 }
-
-.text {
+.header__subtitle {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 100;
@@ -41,24 +39,20 @@ a {
   width: 481px;
   line-height: 32px;
 }
-
-.text__bold {
-  font-weight: 300;
-}
-
-.button__go {
+.header__button {
   background: #9C0332;
   border: 0;
   border-radius: 30px;
   color: #FFFFFF;
-  padding-left: 74px;
-  padding-right: 74px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 74px 13px 74px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  transition: 1s;
+}
+.header__button:hover {
+  background: #EB443F;
 }
 
 .gamebox {
@@ -83,6 +77,10 @@ a {
   padding: 32px;
   border-radius: 16px;
   box-sizing: border-box;
+  transition: 0, 5s;
+}
+.gamebox__container:hover {
+  border: 3px solid #44D2FF;
 }
 .gamebox__container--1 {
   background-image: url(img/game1.png);
@@ -94,6 +92,41 @@ a {
   background-image: url(img/game3.png);
 }
 
+.seasons {
+  padding-top: 233px;
+  padding-bottom: 233px;
+  background-color: #000915;
+}
+.seasons__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.seasons__desc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 584px;
+}
+.seasons__button {
+  background: #9C0332;
+  border: 0;
+  border-radius: 30px;
+  color: #FFFFFF;
+  padding: 13px 74px 13px 74px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  transition: 1s;
+}
+.seasons__button:hover {
+  background: #EB443F;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .center {
     padding-left: 16px;
