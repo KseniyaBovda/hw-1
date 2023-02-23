@@ -13,7 +13,7 @@ if (password == true) {
 
 // Задание 2
 
-let c = 5;
+let c = 0;
 
 if (c > 0 && c < 10) {
     alert(`Верно`);
@@ -44,56 +44,88 @@ let monthNumber = prompt(`Введите номер месяца`)
 
 switch (monthNumber) {
     case `1`:
-        alert(`зима`)
+        alert(`зима`);
         break;
     case `2`:
-        alert(`зима`)
+        alert(`зима`);
         break;
     case `3`:
-        alert(`весна`)
+        alert(`весна`);
         break;
     case `4`:
-        alert(`весна`)
+        alert(`весна`);
         break;
     case `5`:
-        alert(`весна`)
+        alert(`весна`);
         break;
     case `6`:
-        alert(`лето`)
+        alert(`лето`);
         break;
     case `7`:
-        alert(`лето`)
+        alert(`лето`);
         break;
     case `8`:
-        alert(`лето`)
+        alert(`лето`);
         break;
     case `9`:
-        alert(`осень`)
+        alert(`осень`);
         break;
     case `10`:
-        alert(`осень`)
+        alert(`осень`);
         break;
     case `11`:
-        alert(`осень`)
+        alert(`осень`);
         break;
     case `12`:
-        alert(`зима`)
+        alert(`зима`);
         break;
 
     default:
-        alert(`Такого месяца не существует!`)
+        alert(`Такого месяца не существует!`);
         break;
 }
 
+
 // Задание 7
 
+let userParity = Number(prompt(`Пожалуйста, введите любое число`));
+let parity;
+
+parity = (userParity % 2) ? alert(`Число нечетное`) : alert(`Число четное`);
 
 
-// Задание 8
- 
+// Задание 8 
+let clientOS = Number(prompt(`Введите 0, если вы являетесь пользователем iOS 
+Введите 1, если вы являетесь пользователем Android`));
 
+if (clientOS === 0) {
+    alert(`Установите версию приложения для iOS по ссылке`);
+} else {
+    alert(`Установите версию приложения для Android по ссылке`)
+}
 
 // Задание 9
+
+// не знаю как решить по другому, помогите пожалуйта
+
+let clientDeviceYear = Number(prompt(`Введите год производства вашего устройства`));
+clientDeviceYear = 2015;
+switch (clientDeviceYear) {
+    case (clientDeviceYear < 2015 && clientOS === 0):
+        alert(`Установите облегченную версию приложения для Android по ссылке`);
+        break;
+    case (clientDeviceYear < 2015 && clientOS === 1):
+        alert(`Установите облегченную версию приложения для iOS по ссылке`);
+        break;
+    case (clientDeviceYear >= 2015 && clientOS === 0):
+        alert(`Установите версию приложения для Android по ссылке`);
+        break;
+    case (clientDeviceYear >= 2015 && clientOS === 1):
+        alert(`Установите версию приложения для iOS по ссылке`);
+    default:
+        alert(`Ошибка`)
+        break;
+}
 
 
 
