@@ -10,49 +10,124 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-position-x: -217px;
+        background-position-x: -180px;
         background-position-y: -15px;
         background-size: 1058px;
         background-repeat: no-repeat;
-    }
-    
 
-    .welcome {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 39px;
-        width: 343px;
-        text-align: center;
-        padding-bottom: 32px;
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            width: 343px;
+            text-align: center;
+            padding-bottom: 32px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+            text-align: center;
+            padding-bottom: 34px;
+        }
+
+        &__button {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 13px 74px 13px 74px;
+        }
     }
 
-    .text {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px; 
-        width: 343px; 
-        text-align: center;
-        padding-bottom: 34px;
-    }
 
-    .button__go {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 13px 74px 13px 74px;
-    }
+
 
     .gamebox {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         padding-top: 129px;
 
         &__container {
             width: 343px;
             padding: 16px 32px 32px 16px;
         }
-    }        
+    }
+
+    .seasons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 47px;
+
+        &__img {
+            width: 344px;
+            height: 309px;
+            padding-left: 0;
+        }
+
+        &__wrap {
+            text-align: center;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 300px;
+        }
+
+    }
+
+    .words {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 0px;
+
+        &__img {
+            display: none;
+        }
+
+        &__wrap {
+            padding-left: 0;
+            text-align: center;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+        &__img_mob {
+            display: block;
+            width: 344px;
+            height: 236px;
+            padding-top: 30px;
+        }
+    }
 }

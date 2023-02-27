@@ -141,6 +141,58 @@ a {
   background: #EB443F;
 }
 
+.words {
+  padding-top: 233px;
+  padding-bottom: 233px;
+  background-color: #000915;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+.words__wrap {
+  grid-column: span 6;
+  padding-left: 104px;
+}
+.words__img {
+  grid-column: span 5;
+}
+.words__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+  padding-top: 50px;
+}
+.words__desc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 584px;
+  padding-bottom: 32px;
+}
+.words__button {
+  background: #9C0332;
+  border: 0;
+  border-radius: 30px;
+  color: #FFFFFF;
+  padding: 13px 74px 13px 74px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  transition: 1s;
+}
+.words__button:hover {
+  background: #EB443F;
+}
+.words__img_mob {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -152,12 +204,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-position-x: -217px;
+    background-position-x: -180px;
     background-position-y: -15px;
     background-size: 1058px;
     background-repeat: no-repeat;
   }
-  .welcome {
+  .header__title {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -166,7 +218,7 @@ a {
     text-align: center;
     padding-bottom: 32px;
   }
-  .text {
+  .header__subtitle {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -175,7 +227,7 @@ a {
     text-align: center;
     padding-bottom: 34px;
   }
-  .button__go {
+  .header__button {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -185,10 +237,71 @@ a {
   .gamebox {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 129px;
   }
   .gamebox__container {
     width: 343px;
     padding: 16px 32px 32px 16px;
+  }
+  .seasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 47px;
+  }
+  .seasons__img {
+    width: 344px;
+    height: 309px;
+    padding-left: 0;
+  }
+  .seasons__wrap {
+    text-align: center;
+  }
+  .seasons__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons__desc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    width: 300px;
+  }
+  .words {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .words__img {
+    display: none;
+  }
+  .words__wrap {
+    padding-left: 0;
+    text-align: center;
+  }
+  .words__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .words__desc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .words__img_mob {
+    display: block;
+    width: 344px;
+    height: 236px;
+    padding-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
