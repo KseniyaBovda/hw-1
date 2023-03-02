@@ -130,4 +130,30 @@
             padding-top: 30px;
         }
     }
+
+    .puzzles {
+        background-position-y: 276px;
+        background-position-x: -166px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 129px;
+        background-size: 816px;
+    
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+        
+        &__desc {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+    }
 }

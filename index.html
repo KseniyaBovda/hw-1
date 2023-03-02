@@ -28,7 +28,7 @@
         <div class="seasons__wrap">
             <h2 class="seasons__title">Времена года!</h2>
             <p class="seasons__desc">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <button class="seasons__button">Играть!</button>
+            <button onclick="gameSeasons()" class="seasons__button">Играть!</button>
         </div>
         <img class="seasons__img" src="img/img1.svg" alt="seasons_game">
     </section>  
@@ -40,8 +40,17 @@
             <button class="words__button">Играть</button>
         </div>
         <img class="words__img_mob" src="img/img2.svg" alt="words_game">
-    </section>  
-    <script src="script-1.js"></script>
-    <script src="script-2.js"></script>
+    </section> 
+    <section class="puzzles center">
+        <div class="puzzles__wrap">
+            <h2 class="puzzles__title">Игра в загадки</h2>
+            <p class="puzzles__desc">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <button class="puzzles__button">Играть!</button>
+        </div>
+    </section>
+    <footer class="footer center">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

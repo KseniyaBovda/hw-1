@@ -19,7 +19,7 @@ a {
 .header {
     padding-top: 200px;
     padding-bottom: 460px;
-    background-image: url(img/background.png);
+    background-image: url(img/background1.jpg);
 
     &__title {
         font-style: normal;
@@ -91,15 +91,15 @@ a {
     }
 
     &__container--1 {
-        background-image: url(img/game1.png);
+        background-image: url(img/game1.jpg);
     }
 
     &__container--2 {
-        background-image: url(img/game2.png);
+        background-image: url(img/game2.jpg);
     }
 
     &__container--3 {
-        background-image: url(img/game3.png);
+        background-image: url(img/game3.jpg);
     }
 }
 
@@ -108,7 +108,7 @@ a {
     padding-bottom: 233px;
     background-color: #000915;
     display: grid;
-    grid-template-columns: repeat(12 , 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 32px;
 
     &__wrap {
@@ -164,7 +164,7 @@ a {
     padding-bottom: 233px;
     background-color: #000915;
     display: grid;
-    grid-template-columns: repeat(12 , 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 32px;
 
     &__wrap {
@@ -217,6 +217,66 @@ a {
         display: none;
     }
 
+}
+
+.puzzles {
+    padding-top: 239px;
+    padding-bottom: 292px;
+    background-position-y: 12px;
+    background-image: url(img/background2.jpg);
+    text-align: center;
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+        padding-top: 50px;
+    }
+
+    &__desc {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        background: #9C0332;
+        border: 0;
+        border-radius: 30px;
+        color: #FFFFFF;
+        padding: 13px 74px 13px 74px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        transition: 1s;
+    }
+
+    &__button:hover {
+        background: #EB443F;
+    }
+}
+
+.footer {
+    background-color: #000915;
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+
+    &__text {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        text-align:center;  
+    }
 }
 
 @import 'mobile';
