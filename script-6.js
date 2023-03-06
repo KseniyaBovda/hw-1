@@ -5,11 +5,12 @@
 const nums = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < nums.length; i++) {
-	if (nums[i] == 10);
-	console.log(nums[i])
-  break;
+	if (nums[i] === 10) {
+    console.log(nums[i])
+    break;
+  }
 }
-//выводит только 1 
+//выводит только 10 
 
 // Задание 2
 
