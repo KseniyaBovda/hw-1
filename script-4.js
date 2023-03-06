@@ -1,95 +1,57 @@
-// JS-4
+//JS-3
 
-// Задание 1 
+// Задание 1
 
-function lowerValue(first, second) {
-    if (first >= second) {
-        console.log(second);
-    } 
+let hello = 0;
+
+while (hello < 2) {
+    console.log(`Привет`);
+    hello++;
 }
 
-lowerValue (8, 4);
-lowerValue (6, 6);
 
 // Задание 2
 
-function parityNum() {
-    let userNum = prompt(`Введите число`);
+let numbers = 1; 
 
-    if (userNum % 2 == 0) {
-        alert(`Четное число`);
-    } else {
-        alert(`Нечетное число`);
-    }
+while (numbers <= 5 ) {
+    console.log(numbers);
+    numbers++;
 }
 
-parityNum();
+// Задание 3
 
-// Задание 3.1
+let numbersSecond = 7;
 
-function squaredFirst() {
-    let a = Number(prompt(`Введите число`));
-
-    console.log(a ** 2);
+while (numbersSecond <= 22) {
+    console.log(numbersSecond);
+    numbersSecond++;
 }
-
-squaredFirst();
-
-// Задание 3.2
-
-function squaredSecond() {
-    let b = Number(prompt(`Введите число`));
-
-    return b ** 2;
-}
-
-squaredSecond();
 
 // Задание 4
 
-function yourAge(negative, child, adult ) {
-    let question = Number(prompt(`Введите возраст`));
+const obj = {
+	'Коля': '200',
+	'Вася': '300',
+	'Петя': '400'
+};
 
-    if (question < 0) {
-        alert(negative);
+ for (let salary in obj){
 
-    } else if (question <= 12) {
-        alert(child);
+   console.log(`${salary} — зарплата ${obj[salary]} долларов`);
 
-    } else if (question > 13) {
-        alert(adult);
-    } 
 }
-
-yourAge(`Вы ввели неправильное значение`, `Привет, друг!`, `Добро пожаловать!` );
 
 // Задание 5
 
-function check() {
-    let firstValue = prompt(`Введите первое значение`);
-    let secondValue = prompt(`Введите второе значение`);
-
-    if (!isNaN(firstValue) && !isNaN(secondValue)) {
-        return alert(firstValue * secondValue);
-
-    } else {
-        alert(`Одно или оба значения не являются числом`);
-    }
+for (let n = 1000, num = 0; n > 50; num++) {
+    n /= 2;
+        alert( n );
 }
-
-check();
 
 // Задание 6
-
-function cube() {
-    let askNum = prompt(`Введите число`);
-
-   if (! isNaN(askNum)) {
-    return askNum ** 3;
-
-   } else if (isNaN(askNum)) {
-    alert(`Переданный параметр не яывляется числом`);
-   }  
+ 
+for (let friday = 5; friday <= 31; friday++) {
+    friday += 7;
+    alert(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`)    
 }
-
-cube();

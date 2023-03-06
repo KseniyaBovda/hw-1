@@ -1,57 +1,126 @@
-//JS-3
+// JS-2
 
 // Задание 1
 
-let hello = 0;
+let password = 'пароль';
+let questionPassword = prompt(`Введите пароль`);
 
-while (hello < 2) {
-    console.log(`Привет`);
-    hello++;
+if (password == true) {
+    alert(`Пароль введен верно`);
+} else {
+    alert(`Пароль введен неправильно`);
 }
-
 
 // Задание 2
 
-let numbers = 1; 
+let c = 0;
 
-while (numbers <= 5 ) {
-    console.log(numbers);
-    numbers++;
+if (c > 0 && c < 10) {
+    alert(`Верно`);
+} else {
+    alert(`Неверно`);
 }
 
 // Задание 3
 
-let numbersSecond = 7;
+let d = 10;
+let e = 1000;
 
-while (numbersSecond <= 22) {
-    console.log(numbersSecond);
-    numbersSecond++;
+if (d > 100 || e > 100) {
+    alert(`Верно`)
+} else {
+    alert(`Неверно`)
 }
 
 // Задание 4
 
-const obj = {
-	'Коля': '200',
-	'Вася': '300',
-	'Петя': '400'
-};
-
- for (let salary in obj){
-
-   console.log(`${salary} — зарплата ${obj[salary]} долларов`);
-
-}
+let a = Number(2);
+let b = Number(3);
+alert(a + b);
 
 // Задание 5
 
-for (let n = 1000, num = 0; n > 50; num++) {
-    n /= 2;
-        alert( n );
+let monthNumber = prompt(`Введите номер месяца`)
+
+switch (monthNumber) {
+    case `1`:
+        alert(`зима`);
+        break;
+    case `2`:
+        alert(`зима`);
+        break;
+    case `3`:
+        alert(`весна`);
+        break;
+    case `4`:
+        alert(`весна`);
+        break;
+    case `5`:
+        alert(`весна`);
+        break;
+    case `6`:
+        alert(`лето`);
+        break;
+    case `7`:
+        alert(`лето`);
+        break;
+    case `8`:
+        alert(`лето`);
+        break;
+    case `9`:
+        alert(`осень`);
+        break;
+    case `10`:
+        alert(`осень`);
+        break;
+    case `11`:
+        alert(`осень`);
+        break;
+    case `12`:
+        alert(`зима`);
+        break;
+
+    default:
+        alert(`Такого месяца не существует!`);
+        break;
 }
 
-// Задание 6
- 
-for (let friday = 5; friday <= 31; friday++) {
-    friday += 7;
-    alert(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`)    
+
+// Задание 7
+
+let userParity = Number(prompt(`Пожалуйста, введите любое число`));
+let parity;
+
+parity = (userParity % 2) ? alert(`Число нечетное`) : alert(`Число четное`);
+
+
+// Задание 8 
+let clientOS = Number(prompt(`Введите 0, если вы являетесь пользователем iOS 
+Введите 1, если вы являетесь пользователем Android`));
+
+if (clientOS === 0) {
+    alert(`Установите версию приложения для iOS по ссылке`);
+} else {
+    alert(`Установите версию приложения для Android по ссылке`)
+}
+
+// Задание 9
+
+let clientDeviceYear = Number(prompt(`Введите год производства вашего устройства`));
+clientDeviceYear = 2015;
+switch (clientDeviceYear) {
+    case (clientDeviceYear < 2015 && clientOS === 0):
+        alert(`Установите облегченную версию приложения для Android по ссылке`);
+        break;
+    case (clientDeviceYear < 2015 && clientOS === 1):
+        alert(`Установите облегченную версию приложения для iOS по ссылке`);
+        break;
+    case (clientDeviceYear >= 2015 && clientOS === 0):
+        alert(`Установите версию приложения для Android по ссылке`);
+        break;
+    case (clientDeviceYear >= 2015 && clientOS === 1):
+        alert(`Установите версию приложения для iOS по ссылке`);
+    default:
+        alert(`Ошибка`)
+        break;
 }
