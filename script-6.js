@@ -1,25 +1,31 @@
-// JS-5
+// JS-6
 
 // Задание 1
 
 const nums = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < nums.length; i++) {
+  console.log(nums[i]);
 	if (nums[i] === 10) {
-    console.log(nums[i])
     break;
   }
 }
-//выводит только 10 
+
 
 // Задание 2
 
 const m = [1, 5, 4, 10, 0, 3];
 
-let position = m.indexOf(4);
+let position = null;
 
-console.log(position +1); 
-// каким образом можно решить эту задачу по другому?
+for (let i = 0; i < m.length; i++) {
+if (m[i] === 4) {
+  position = i;
+  break  
+}
+}
+
+console.log(position); 
 
 // Задание 3
 
@@ -93,17 +99,19 @@ console.log(arrMultid);
 // Задание 10 
 
 const arrRan = [1,4,6,8,10];
-let sum = 0;
+let i = 0;
 
-for(const el of arrRan) {
-  sum += el;
-  console.log(sum);
+while (arrRan[i + 1] !== undefined) {
+  console.log(arrRan[i] + arrRan[i + 1]);
+  i++;
 }
-// каким образом можно решить эту задачу по другому?
+
 
 
 // Задание 11
 
+const tenth = [Math.round(Math.random() * 10)];
 
+console.log(tenth);
 
 // Задание 12

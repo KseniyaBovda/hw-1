@@ -1,3 +1,5 @@
+// JS для сайта 
+
 // Задание 7
 
 function gameSeasons() {
@@ -15,4 +17,6 @@ function gameSeasons() {
         alert(`осень`);
     }
 }
+
+
 
