@@ -88,7 +88,7 @@ function cube() {
     return askNum ** 3;
 
    } else if (isNaN(askNum)) {
-    alert(`Переданный параметр не яывляется числом`);
+    alert(`Переданный параметр не является числом`);
    }  
 }
 

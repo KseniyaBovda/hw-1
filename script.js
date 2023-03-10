@@ -18,5 +18,28 @@ function gameSeasons() {
     }
 }
 
+// Задание 11
+
+function gameWords() {
+    let fruitsArr =  ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruitsArr = fruitsArr.sort(() => Math.random() - 0.5);
+    alert (fruitsArr)
+    let firstAsk = (prompt('Назови первй элемент списка'));
+    firstAsk = firstAsk.toLocaleLowerCase();
+    let secondAsk = (prompt('Назови второй элемент списка'));
+    secondAsk = secondAsk.toLocaleLowerCase();
+    if (firstAsk == fruitsArr[0] && secondAsk == fruitsArr[6]) {
+        alert('Правильно!');
+    } else if (firstAsk === fruitsArr[0]) {
+        alert('Вы были близки к победе!');
+    } else if (secondAsk === fruitsArr[6]) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Неверно');
+    }
+}
+
+// выводит только неверно (подскажите как исправить)
+
 
 

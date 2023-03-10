@@ -59,10 +59,9 @@ console.log(arrN);
 
 // Задание 6
 
-const arrOnlyNum = [9, 8, 7, 'a', 6, 5];
+const arrAll = [9, 8, 7, 'a', 6, 5];
 
-arrOnlyNum.sort();
-arrOnlyNum.pop();
+arrOnlyNum = arrAll.filter(el => typeof el === "number");
 
 console.log(arrOnlyNum);
 
@@ -82,11 +81,8 @@ if (search === true) {
 
 const line = 'abcdef';
 
-const lineArr = line.split('');
+const lineStr = line.split('').reverse().join('');
 
-const lineReverse = lineArr.reverse();
-
-const lineStr = lineReverse.join('');
 console.log(lineStr);
 
 // Задание 9
@@ -99,19 +95,39 @@ console.log(arrMultid);
 // Задание 10 
 
 const arrRan = [1,4,6,8,10];
-let i = 0;
+let it = 0;
 
-while (arrRan[i + 1] !== undefined) {
-  console.log(arrRan[i] + arrRan[i + 1]);
-  i++;
+while (arrRan[it + 1] !== undefined) {
+  console.log(arrRan[it] + arrRan[it + 1]);
+  it++;
 }
-
 
 
 // Задание 11
 
-const tenth = [Math.round(Math.random() * 10)];
+const eleventh = [];
+const i = 0;
 
-console.log(tenth);
+for (let i = 0; i <= 9; i++) {
+  eleventh.push(Math.round(Math.random() * 10));
+}
+console.log(eleventh);
+
+const even = eleventh.filter(item => item % 2 == 0);
+
+console.log(even);
 
 // Задание 12
+
+const twelfth = [];
+const a = 0;
+
+for (let a = 0; a <= 5; a++) {
+  twelfth.push(Math.round(Math.random() * 10));
+}
+console.log(twelfth);
+
+const average = twelfth.reduce(function(j, q){
+  return Math.round((j + q) / 5)
+});
+console.log(average);
