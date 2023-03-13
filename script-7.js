@@ -41,7 +41,7 @@ max = Math.max.apply(numArr, numArr);
 console.log(max);
 min = Math.min.apply(numArr, numArr);
 console.log(min);
-// выводит только по одному числу (подскажите как исправить)
+
 
 // Задание 5
 
@@ -63,13 +63,14 @@ getRandomArrNumbers(Number(prompt('Введите любое число')));
 
 // Задание 7 
 
-let ranValue = (maxValue, minValue) => {
-    let ranValueResult = Math.round((Math.random) * (maxValue - minValue) + minValue);
-    console.log(ranValueResult);
+function getRandomInt(max,min) {
+    let non = Math.round(Math.random() * max);
+    while (non < min){
+        non = Math.round(Math.random() * max);
+    } 
+   return non;
 }
-
-ranValue(Number(prompt('Введите первое целое число')), Number(prompt('Введите второе значение')));
-// выводит NaN (подскажите как исправить)
+console.log(getRandomInt(15, 6));  
 
 // Задание 8
 
@@ -79,11 +80,10 @@ console.log(today);
 
 // Задание 9
 
-let currentDate = new Date(2023,03,10);
-currentDate.getDate(currentDate.setDate(+73));
+let currentDate = new Date();
+currentDate.getDate(currentDate.setDate(73));
 
 console.log(currentDate);
-// выводит неправильную дату (подскажите как исправить)
 
 
 // Задание 10 
@@ -94,10 +94,9 @@ function dateV(date) {
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]; 
-    let fullDate = 'Дата:' + date.getDate() + ' ' + months[date.getMonth()] + ' ' + days[date.getDay() + 
-        'Время:' + date.getHours() + date.getMinutes() + date.getSeconds() ];
-    console.log(fullDate);
+    let fullDate = 'Дата:' + date.getDate() + ' ' + months[date.getMonth()] + ' ' + days[date.getDay()];
+    let time = 'Время:' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+     console.log(fullDate,time);   
 }
 
 dateV(date);
-// не выводит часы, минуты и секунды (подскажите как исправить)

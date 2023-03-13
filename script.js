@@ -22,13 +22,14 @@ function gameSeasons() {
 
 function gameWords() {
     let fruitsArr =  ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    fruitsArr = fruitsArr.sort(() => Math.random() - 0.5);
+    fruitsArr = (fruitsArr.sort(() => Math.random() - 0.5));
     alert (fruitsArr)
-    let firstAsk = (prompt('Назови первй элемент списка'));
-    firstAsk = firstAsk.toLocaleLowerCase();
-    let secondAsk = (prompt('Назови второй элемент списка'));
-    secondAsk = secondAsk.toLocaleLowerCase();
-    if (firstAsk == fruitsArr[0] && secondAsk == fruitsArr[6]) {
+    let firstAsk = (prompt('Назови первый элемент списка'));
+    firstAsk = firstAsk.toLowerCase();
+    let secondAsk = (prompt('Назови последний элемент списка'));
+    secondAsk = secondAsk.toLowerCase();
+  
+    if (firstAsk === fruitsArr[0].toLowerCase && secondAsk === fruitsArr[6].toLowerCase ) {
         alert('Правильно!');
     } else if (firstAsk === fruitsArr[0]) {
         alert('Вы были близки к победе!');

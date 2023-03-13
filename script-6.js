@@ -48,7 +48,6 @@ for (let i = 0; i < 3 ; i++) {
 }
 
 console.log(arrNum); 
-//  выводит "[Array(3), Array(3), Array(3)]" это правильно?
 
 // Задание 5
 
@@ -127,7 +126,5 @@ for (let a = 0; a <= 5; a++) {
 }
 console.log(twelfth);
 
-const average = twelfth.reduce(function(j, q){
-  return Math.round((j + q) / 5)
-});
+const average = twelfth.reduce((acc, cur) => acc + cur , 0 ) / twelfth.length;
 console.log(average);
